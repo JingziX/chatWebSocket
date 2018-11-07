@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+/**
+ * 
+ * @authors xiangjm (xiangjm@seaway.net.cn)
+ * @date    2018-11-07 11:37:36
+ * @version $Id$
+ */
+body,html,div,ul,li,input{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #475164;
+	color: #fff;
+}
+.input-main
+{
+    padding: 5px 10px;
+
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	box-sizing: border-box;
+}
+#mess
+{
+    text-align: center;
+}
+.input{
+	border:0 none;
+	padding: 15px;
+	line-height: 1.2;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	outline:none;
+}
+.btn{
+	float: right;
+	padding: 10px 15px;
+	background: #e05782;
+	margin-top: 10px;
+	border-radius: 5px;
+	color: #fff;
+}
