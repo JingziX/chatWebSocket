@@ -14,3 +14,5 @@ git 仓库地址
 git clone origin git@github.com:JingziX/chatWebSocket.git
 
 启动后修改ws 为本地的ip地址
+
+https://blog.csdn.net/CJXBShowZhouyujuan/article/details/77816944
