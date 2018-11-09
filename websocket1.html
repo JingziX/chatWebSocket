@@ -9,20 +9,21 @@
 </head>
 <body>
     <div id="mess">正在连接...</div>
-    <div class="content">
+    <div class="content" id="content">
         
     </div>
     <div class="input-main">
         <input type="text" id="msg" value="就啊哈" placeholder="请发言啦" class="input" autofocus="autofocus">
-        <div id="sendMsg" class="btn">发送biubiu</div>
+        <div id="sendMsg" class="btn">biu~</div>
     </div>
 
     <script type="text/javascript" src="moment.min.js"></script>
     <script>
         var mess = document.getElementById("mess");
+        var content = document.getElementById("content");
         var osendMsg = document.getElementById("sendMsg");
         if(window.WebSocket){
-            var ws = new WebSocket('ws://192.168.0.102:8001');
+            var ws = new WebSocket('ws://192.168.32.193:8001');
 
             ws.onopen = function(e){
                 console.log("连接服务器成功");
@@ -38,7 +39,7 @@
                 mess.innerHTML = "连接成功";
 
                 var time = moment().format('YYYY-MM-DD HH:mm:ss');
-                mess.innerHTML+=time+"的消息："+e.data+"<br>"
+                content.innerHTML+=time+"的消息："+e.data+"<br>"
 
                 var omsg = document.getElementById("msg").value;
                 osendMsg.onclick = function(e){

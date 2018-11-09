@@ -15,8 +15,8 @@ body{
 }
 .input-main
 {
-    padding: 5px 10px;
-
+    padding: 9px 10px;
+	background: rgba(255,255,255,0.2);
     text-align: center;
     overflow: hidden;
     position: fixed;
@@ -29,6 +29,10 @@ body{
 {
     text-align: center;
 }
+.content{
+	text-align: center;
+	margin-bottom: 110px;
+}
 .input{
 	border:0 none;
 	padding: 15px;
@@ -39,10 +43,15 @@ body{
 	outline:none;
 }
 .btn{
-	float: right;
-	padding: 10px 15px;
+	position: fixed;
+	bottom: 4px;
+	right: 1px;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
 	background: #e05782;
-	margin-top: 10px;
-	border-radius: 5px;
+	text-shadow:  0px 0px 8px rgba(255,255,255,0.5);
+	box-shadow: 0px 0px 8px rgba(255,255,255,0.5) inset;
 	color: #fff;
 }
